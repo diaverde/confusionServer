@@ -98,10 +98,7 @@ dishRouter.route('/:dishId/comments')
     Dishes.findById(req.params.dishId)
     .then((dish) => {
         if (dish != null) {
-            console.log("ici");
-            console.log(req.body);
             dish.comments.push(req.body);
-            console.log("doom");
             dish.save()
             .then((dish) => {
                 res.statusCode = 200;
