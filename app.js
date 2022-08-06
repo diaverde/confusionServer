@@ -17,8 +17,6 @@ var promoRouter = require('./routes/promoRouter');
 var leaderRouter = require('./routes/leaderRouter');
 const uploadRouter = require('./routes/uploadRouter');
 
-//const Dishes = require('./models/dishes');
-
 const url = config.mongoUrl;
 const connect = mongoose.connect(url);
 
